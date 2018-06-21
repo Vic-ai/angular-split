@@ -106,8 +106,8 @@ export class SplitAreaDirective implements OnInit, OnDestroy {
             }
         }
         else {
-            this.renderer.setStyle(this.elRef.nativeElement, 'overflow-x', 'hidden');
-            this.renderer.setStyle(this.elRef.nativeElement, 'overflow-y', 'auto');
+            this.renderer.setStyle(this.elRef.nativeElement, 'overflow-x', 'scroll');
+            this.renderer.setStyle(this.elRef.nativeElement, 'overflow-y', 'hidden');
             this.renderer.removeStyle(this.elRef.nativeElement, 'max-width');
         }
 
